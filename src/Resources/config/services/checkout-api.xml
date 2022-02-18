@@ -47,6 +47,7 @@
             <argument key="$pluginRepository" type="service" id="plugin.repository"/>
             <argument key="$genericLogger" type="service" id="monolog.logger.adyen_generic"/>
             <argument key="$apiLogger" type="service" id="monolog.logger.adyen_api"/>
+            <argument key="$shopwareVersion">%kernel.shopware_version%</argument>
         </service>
         <service id="Adyen\Shopware\Service\PaymentMethodsService" autowire="true">
             <argument key="$logger" type="service" id="monolog.logger.adyen_generic"/>
